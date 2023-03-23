@@ -1,0 +1,999 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+
+@import url("https://fonts.googleapis.com/css?family=Inter:400");
+
+/* The following line is used to measure usage of this code in production. For more info see our usage billing page */
+@import url("https://px.animaapp.com/641bb96a2207eb244e6e7bb2.641bb96b35f640a2b81c50ff.mqO27BG.hch.png");
+
+
+.screen textarea:focus,
+.screen input:focus {
+  outline: none;
+}
+
+.screen * {
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+
+.screen div {
+  -webkit-text-size-adjust: none;
+}
+
+.component-wrapper a {
+  display: contents;
+  pointer-events: auto;
+  text-decoration: none;
+}
+
+.component-wrapper * {
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+  pointer-events: none;
+}
+
+.component-wrapper a *,
+.component-wrapper input,
+.component-wrapper video,
+.component-wrapper iframe {
+  pointer-events: auto;
+}
+
+.component-wrapper.not-ready,
+.component-wrapper.not-ready * {
+  visibility: hidden !important;
+}
+
+.screen a {
+  display: contents;
+  text-decoration: none;
+}
+
+.full-width-a {
+  width: 100%;
+}
+
+.full-height-a {
+  height: 100%;
+}
+
+.container-center-vertical {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  pointer-events: none;
+}
+
+.container-center-vertical > * {
+  flex-shrink: 0;
+  pointer-events: auto;
+}
+
+.container-center-horizontal {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  pointer-events: none;
+  width: 100%;
+}
+
+.container-center-horizontal > * {
+  flex-shrink: 0;
+  pointer-events: auto;
+}
+
+.auto-animated div {
+  --z-index: -1;
+  opacity: 0;
+  position: absolute;
+}
+
+.auto-animated input {
+  --z-index: -1;
+  opacity: 0;
+  position: absolute;
+}
+
+.auto-animated .container-center-vertical,
+.auto-animated .container-center-horizontal {
+  opacity: 1;
+}
+
+.overlay-base {
+  display: none;
+  height: 100%;
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.overlay-base.animate-appear {
+  align-items: center;
+  animation: reveal 0.3s ease-in-out 1 normal forwards;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  opacity: 0;
+}
+
+.overlay-base.animate-disappear {
+  animation: reveal 0.3s ease-in-out 1 reverse forwards;
+  display: block;
+  opacity: 1;
+  pointer-events: none;
+}
+
+.overlay-base.animate-disappear * {
+  pointer-events: none;
+}
+
+@keyframes reveal {
+  from { opacity: 0 }
+ to { opacity: 1 }
+}
+
+.animate-nodelay {
+  animation-delay: 0s;
+}
+
+.align-self-flex-start {
+  align-self: flex-start;
+}
+
+.align-self-flex-end {
+  align-self: flex-end;
+}
+
+.align-self-flex-center {
+  align-self: flex-center;
+}
+
+.valign-text-middle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.valign-text-bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+input:focus {
+  outline: none;
+}
+
+.listeners-active,
+.listeners-active * {
+  pointer-events: auto;
+}
+
+.hidden,
+.hidden * {
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.smart-layers-pointers,
+.smart-layers-pointers * {
+  pointer-events: auto;
+  visibility: visible;
+}
+
+.listeners-active-click,
+.listeners-active-click * {
+  cursor: pointer;
+}
+
+* {
+  box-sizing: border-box;
+}
+:root { 
+  --dove-gray: #707070;
+  --midnight-moss: #060606;
+ 
+  --font-size-m: 26px;
+ 
+  --font-family-inter: "Inter", Helvetica;
+}
+.inter-normal-midnight-moss-26px {
+  color: var(--midnight-moss);
+  font-family: var(--font-family-inter);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 400;
+}
+
+:root {
+}
+
+
+/* screen - sign-in */
+
+.sign-in {
+  background-color: #110202;
+  border: 1px none;
+  height: 736px;
+  mix-blend-mode: normal;
+  opacity: 1;
+  overflow: hidden;
+  overflow-x: hidden;
+  position: relative;
+  width: 414px;
+}
+
+.sign-in .download-C61RwL {
+  --z-index: 0;
+  background-color: transparent;
+  background-image: url(https://cdn.animaapp.com/projects/641bb96c8d180350c60c5ff4/releases/641bbca0d90857335b3b6baf/img/download-3.png);
+  background-size: 100% 100%;
+  height: 586px;
+  left: 15px;
+  mix-blend-mode: soft-light;
+  object-fit: cover;
+  opacity: 1;
+  position: absolute;
+  top: 56px;
+  width: 385px;
+}
+
+.sign-in .sign-in-C61RwL {
+  --z-index: 1;
+  background-color: transparent;
+  color: #43eb11;
+  font-family: 'Inter', Helvetica;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 400;
+  height: auto;
+  left: 40px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  mix-blend-mode: normal;
+  opacity: 1;
+  position: absolute;
+  text-align: left;
+  top: 58px;
+  width: auto;
+}
+
+.sign-in .rectangle-8-C61RwL {
+  --z-index: 2;
+  background-color: #3be23b;
+  border: 1px solid;
+  border-color: #707070;
+  cursor: pointer;
+  height: 41px;
+  left: 154px;
+  mix-blend-mode: normal;
+  opacity: 1;
+  position: absolute;
+  top: 542px;
+  width: 122px;
+}
+
+.sign-in .text_label-C61RwL {
+  --z-index: 3;
+  background-color: transparent;
+  color: #020701;
+  font-family: 'Inter', Helvetica;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  height: auto;
+  left: 170px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  mix-blend-mode: normal;
+  opacity: 1;
+  position: absolute;
+  text-align: left;
+  top: 550px;
+  width: auto;
+}
+
+.sign-in .rectangle-7-C61RwL {
+  --z-index: 4;
+  background-color: #efe7e7;
+  border: 1px solid;
+  border-color: #707070;
+  border-radius: 5px;
+  height: 43px;
+  left: 54px;
+  mix-blend-mode: normal;
+  opacity: 1;
+  position: absolute;
+  top: 368px;
+  width: 318px;
+}
+
+.sign-in .rectangle-7-VMr6Om {
+  --z-index: 5;
+  background-color: #efe7e7;
+  border: 1px solid;
+  border-color: #707070;
+  border-radius: 5px;
+  height: 43px;
+  left: 56px;
+  mix-blend-mode: normal;
+  opacity: 1;
+  position: absolute;
+  top: 432px;
+  width: 318px;
+}
+
+.sign-in .icon-sand_timer-C61RwL {
+  --z-index: 6;
+  background-color: transparent;
+  background-image: url(https://cdn.animaapp.com/projects/641bb96c8d180350c60c5ff4/releases/641bbca0d90857335b3b6baf/img/person-fill0-wght0-grad0-opsznan--1-@2x.png);
+  background-size: 100% 100%;
+  height: 43px;
+  left: 54px;
+  mix-blend-mode: normal;
+  object-fit: cover;
+  opacity: 1;
+  position: absolute;
+  top: 368px;
+  width: 49px;
+}
+
+.sign-in .rectangle-10-C61RwL {
+  --z-index: 7;
+  background-color: #ffffff;
+  border: 1px solid;
+  border-color: #707070;
+  height: 15px;
+  left: 56px;
+  mix-blend-mode: normal;
+  opacity: 1;
+  position: absolute;
+  top: 485px;
+  width: 14px;
+}
+
+.sign-in .remember-me-C61RwL {
+  --z-index: 8;
+  background-color: transparent;
+  color: #aeeca1f0;
+  font-family: 'Inter', Helvetica;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  height: auto;
+  left: 79px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  mix-blend-mode: normal;
+  opacity: 1;
+  position: absolute;
+  text-align: left;
+  top: 482px;
+  width: auto;
+}
+
+.sign-in .dont-have-an-account-register-C61RwL {
+  --z-index: 9;
+  background-color: transparent;
+  color: transparent;
+  cursor: pointer;
+  font-family: 'Inter', Helvetica;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  height: auto;
+  left: 95px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  opacity: 1;
+  position: absolute;
+  text-align: left;
+  top: 597px;
+  width: auto;
+}
+
+.sign-in .span0-ry3fiT {
+  color: #aeeca1f0;
+  font-style: normal;
+}
+
+.sign-in .span1-ry3fiT {
+  color: #e7a1ecd9;
+  font-style: normal;
+}
+
+.sign-in .key_fill0_wght0_grad0_opsz-na-n-C61RwL {
+  --z-index: 10;
+  background-color: transparent;
+  background-image: url(https://cdn.animaapp.com/projects/641bb96c8d180350c60c5ff4/releases/641bbca0d90857335b3b6baf/img/key-fill0-wght0-grad0-opsznan@2x.png);
+  background-size: 100% 100%;
+  height: 43px;
+  left: 54px;
+  mix-blend-mode: normal;
+  object-fit: cover;
+  opacity: 1;
+  position: absolute;
+  top: 432px;
+  width: 49px;
+}
+/* screen - home */
+
+.home {
+  background-color: #f8eeee;
+  border: 1px none;
+  height: 736px;
+  mix-blend-mode: normal;
+  opacity: 1;
+  overflow: hidden;
+  overflow-x: hidden;
+  position: relative;
+  width: 414px;
+}
+
+.home .rectangle-12-C61RwL {
+  --z-index: 0;
+  background-color: transparent;
+  background-image: url(https://cdn.animaapp.com/projects/641bb96c8d180350c60c5ff4/releases/641bbca0d90857335b3b6baf/img/rectangle-12-1.png);
+  background-size: 100% 100%;
+  height: 97px;
+  left: 0px;
+  mix-blend-mode: normal;
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  width: 414px;
+}
+
+.home .menu_fill0_wght0_grad0_opsz-na-n-C61RwL {
+  --z-index: 1;
+  background-color: transparent;
+  background-image: url(https://cdn.animaapp.com/projects/641bb96c8d180350c60c5ff4/releases/641bbca0d90857335b3b6baf/img/menu-fill0-wght0-grad0-opsznan@2x.png);
+  background-size: 100% 100%;
+  cursor: pointer;
+  height: 73px;
+  left: 20px;
+  mix-blend-mode: normal;
+  object-fit: cover;
+  opacity: 1;
+  position: absolute;
+  top: 11px;
+  width: 91px;
+}
+
+.home .x-C61RwL {
+  --z-index: 2;
+  background-color: transparent;
+  color: #110adf;
+  font-family: 'Inter', Helvetica;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  height: auto;
+  left: 47px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  mix-blend-mode: normal;
+  opacity: 1;
+  position: absolute;
+  text-align: center;
+  top: 518px;
+  width: auto;
+}
+
+.home .download-C61RwL {
+  --z-index: 3;
+  background-color: transparent;
+  background-image: url(https://cdn.animaapp.com/projects/641bb96c8d180350c60c5ff4/releases/641bbca0d90857335b3b6baf/img/download-2@2x.png);
+  background-size: 100% 100%;
+  height: 225px;
+  left: 95px;
+  mix-blend-mode: normal;
+  object-fit: cover;
+  opacity: 1;
+  position: absolute;
+  top: 256px;
+  width: 225px;
+}
+
+.home .icon-home-C61RwL {
+  --z-index: 4;
+  background-color: transparent;
+  background-image: url(https://cdn.animaapp.com/projects/641bb96c8d180350c60c5ff4/releases/641bbca0d90857335b3b6baf/img/home-48.png);
+  background-size: 100% 100%;
+  height: 40px;
+  left: 33px;
+  mix-blend-mode: normal;
+  object-fit: cover;
+  opacity: 1;
+  position: absolute;
+  top: 669px;
+  width: 40px;
+}
+
+.home .rectangle-1-C61RwL {
+  --z-index: 5;
+  background-color: #1e13b4;
+  box-shadow: 0px -4px 2.5px #196baa9c;
+  height: 76px;
+  left: 3px;
+  mix-blend-mode: normal;
+  opacity: 1;
+  position: absolute;
+  top: 660px;
+  width: 411px;
+}
+/* screen - register */
+
+.register {
+  background-color: #110202;
+  border: 1px none;
+  height: 736px;
+  mix-blend-mode: normal;
+  opacity: 1;
+  overflow: hidden;
+  overflow-x: hidden;
+  position: relative;
+  width: 414px;
+}
+
+.register .group-4-C61RwL {
+  --z-index: 0;
+  background-color: transparent;
+  height: 586px;
+  left: 32px;
+  opacity: 1;
+  position: absolute;
+  top: 50px;
+  width: 382px;
+}
+
+.register .download-KOsP6k {
+  --z-index: 0;
+  background-color: transparent;
+  background-image: url(https://cdn.animaapp.com/projects/641bb96c8d180350c60c5ff4/releases/641bbca0d90857335b3b6baf/img/download-5.png);
+  background-size: 100% 100%;
+  height: 592px;
+  left: -3px;
+  mix-blend-mode: soft-light;
+  object-fit: cover;
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  width: 385px;
+}
+
+.register .register-C61RwL {
+  --z-index: 1;
+  background-color: transparent;
+  color: #43eb11;
+  font-family: 'Inter', Helvetica;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 400;
+  height: auto;
+  left: 30px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  mix-blend-mode: normal;
+  opacity: 1;
+  position: absolute;
+  text-align: left;
+  top: 100px;
+  width: auto;
+}
+
+.register .group-2-C61RwL {
+  --z-index: 2;
+  background-color: transparent;
+  height: 358px;
+  left: 50px;
+  opacity: 1;
+  position: absolute;
+  top: 183px;
+  width: 318px;
+}
+
+.register .group-1-zUixHA {
+  --z-index: 0;
+  background-color: transparent;
+  height: 358px;
+  left: 0px;
+  opacity: 1;
+  position: relative;
+  top: 0px;
+  width: 318px;
+}
+
+.register .repeat-grid-1-7iuo0N {
+  --z-index: 0;
+  background-color: transparent;
+  height: 358px;
+  left: 0px;
+  opacity: 1;
+  position: relative;
+  top: 0px;
+  width: 318px;
+}
+
+.register .group-dYAhXj {
+  --z-index: 0;
+  background-color: transparent;
+  height: 43px;
+  left: 0px;
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  width: 318px;
+}
+
+.register .rectangle-7-lpdCpC {
+  --z-index: 0;
+  background-color: #efe7e7;
+  border: 1px solid;
+  border-color: #707070;
+  border-radius: 5px;
+  height: 43px;
+  left: 0px;
+  mix-blend-mode: normal;
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  width: 318px;
+}
+
+.register .icon-sand_timer-lpdCpC {
+  --z-index: 1;
+  background-color: transparent;
+  background-image: url(https://cdn.animaapp.com/projects/641bb96c8d180350c60c5ff4/releases/641bbca0d90857335b3b6baf/img/person-fill0-wght0-grad0-opsznan--1-@2x.png);
+  background-size: 100% 100%;
+  height: 43px;
+  left: 0px;
+  mix-blend-mode: normal;
+  object-fit: cover;
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  width: 49px;
+}
+
+.register .group-YRTz3w {
+  --z-index: 1;
+  background-color: transparent;
+  height: 43px;
+  left: 0px;
+  opacity: 1;
+  position: absolute;
+  top: 63px;
+  width: 318px;
+}
+
+.register .rectangle-7-f0o5FU {
+  --z-index: 0;
+  background-color: #efe7e7;
+  border: 1px solid;
+  border-color: #707070;
+  border-radius: 5px;
+  height: 43px;
+  left: 0px;
+  mix-blend-mode: normal;
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  width: 318px;
+}
+
+.register .icon-sand_timer-f0o5FU {
+  --z-index: 1;
+  background-color: transparent;
+  background-image: url(https://cdn.animaapp.com/projects/641bb96c8d180350c60c5ff4/releases/641bbca0d90857335b3b6baf/img/person-fill0-wght0-grad0-opsznan--1-@2x.png);
+  background-size: 100% 100%;
+  height: 43px;
+  left: 0px;
+  mix-blend-mode: normal;
+  object-fit: cover;
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  width: 49px;
+}
+
+.register .group-xxBQaE {
+  --z-index: 2;
+  background-color: transparent;
+  height: 43px;
+  left: 0px;
+  opacity: 1;
+  position: absolute;
+  top: 126px;
+  width: 318px;
+}
+
+.register .rectangle-7-uvyOz0 {
+  --z-index: 0;
+  background-color: #efe7e7;
+  border: 1px solid;
+  border-color: #707070;
+  border-radius: 5px;
+  height: 43px;
+  left: 0px;
+  mix-blend-mode: normal;
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  width: 318px;
+}
+
+.register .icon-sand_timer-uvyOz0 {
+  --z-index: 1;
+  background-color: transparent;
+  background-image: url(https://cdn.animaapp.com/projects/641bb96c8d180350c60c5ff4/releases/641bbca0d90857335b3b6baf/img/person-fill0-wght0-grad0-opsznan--1-@2x.png);
+  background-size: 100% 100%;
+  height: 43px;
+  left: 0px;
+  mix-blend-mode: normal;
+  object-fit: cover;
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  width: 49px;
+}
+
+.register .group-vtzzvI {
+  --z-index: 3;
+  background-color: transparent;
+  height: 43px;
+  left: 0px;
+  opacity: 1;
+  position: absolute;
+  top: 189px;
+  width: 318px;
+}
+
+.register .rectangle-7-WlDgfm {
+  --z-index: 0;
+  background-color: #efe7e7;
+  border: 1px solid;
+  border-color: #707070;
+  border-radius: 5px;
+  height: 43px;
+  left: 0px;
+  mix-blend-mode: normal;
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  width: 318px;
+}
+
+.register .icon-sand_timer-WlDgfm {
+  --z-index: 1;
+  background-color: transparent;
+  background-image: url(https://cdn.animaapp.com/projects/641bb96c8d180350c60c5ff4/releases/641bbca0d90857335b3b6baf/img/person-fill0-wght0-grad0-opsznan--1-@2x.png);
+  background-size: 100% 100%;
+  height: 43px;
+  left: 0px;
+  mix-blend-mode: normal;
+  object-fit: cover;
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  width: 49px;
+}
+
+.register .group-yhxcYN {
+  --z-index: 4;
+  background-color: transparent;
+  height: 43px;
+  left: 0px;
+  opacity: 1;
+  position: absolute;
+  top: 252px;
+  width: 318px;
+}
+
+.register .rectangle-7-pkoEPx {
+  --z-index: 0;
+  background-color: #efe7e7;
+  border: 1px solid;
+  border-color: #707070;
+  border-radius: 5px;
+  height: 43px;
+  left: 0px;
+  mix-blend-mode: normal;
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  width: 318px;
+}
+
+.register .icon-sand_timer-pkoEPx {
+  --z-index: 1;
+  background-color: transparent;
+  background-image: url(https://cdn.animaapp.com/projects/641bb96c8d180350c60c5ff4/releases/641bbca0d90857335b3b6baf/img/person-fill0-wght0-grad0-opsznan--1-@2x.png);
+  background-size: 100% 100%;
+  height: 43px;
+  left: 0px;
+  mix-blend-mode: normal;
+  object-fit: cover;
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  width: 49px;
+}
+
+.register .group-7bA5AR {
+  --z-index: 5;
+  background-color: transparent;
+  height: 43px;
+  left: 0px;
+  opacity: 1;
+  position: absolute;
+  top: 315px;
+  width: 318px;
+}
+
+.register .rectangle-7-9JaljS {
+  --z-index: 0;
+  background-color: #efe7e7;
+  border: 1px solid;
+  border-color: #707070;
+  border-radius: 5px;
+  height: 43px;
+  left: 0px;
+  mix-blend-mode: normal;
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  width: 318px;
+}
+
+.register .icon-sand_timer-9JaljS {
+  --z-index: 1;
+  background-color: transparent;
+  background-image: url(https://cdn.animaapp.com/projects/641bb96c8d180350c60c5ff4/releases/641bbca0d90857335b3b6baf/img/person-fill0-wght0-grad0-opsznan--1-@2x.png);
+  background-size: 100% 100%;
+  height: 43px;
+  left: 0px;
+  mix-blend-mode: normal;
+  object-fit: cover;
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  width: 49px;
+}
+
+.register .rectangle-8-C61RwL {
+  --z-index: 3;
+  background-color: #3be23b;
+  border: 1px solid;
+  border-color: #707070;
+  cursor: pointer;
+  height: 41px;
+  left: 156px;
+  mix-blend-mode: normal;
+  opacity: 1;
+  position: absolute;
+  top: 549px;
+  width: 122px;
+}
+
+.register .register-VMr6Om {
+  --z-index: 4;
+  background-color: transparent;
+  color: #020701;
+  font-family: 'Inter', Helvetica;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  height: auto;
+  left: 176px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  mix-blend-mode: normal;
+  opacity: 1;
+  position: absolute;
+  text-align: left;
+  top: 550px;
+  width: auto;
+}
+
+.register .passw0rd-C61RwL {
+  --z-index: 5;
+  background-color: transparent;
+  color: #020701;
+  font-family: 'Inter', Helvetica;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  height: auto;
+  left: 152px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  mix-blend-mode: normal;
+  opacity: 0.33;
+  position: absolute;
+  text-align: left;
+  top: 502px;
+  width: auto;
+}
+
+.register .text_label-C61RwL {
+  --z-index: 6;
+  background-color: transparent;
+  color: #020701;
+  font-family: 'Inter', Helvetica;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  height: auto;
+  left: 154px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  mix-blend-mode: normal;
+  opacity: 0.33;
+  position: absolute;
+  text-align: left;
+  top: 254px;
+  width: auto;
+}
+
+.register .text_label-VMr6Om {
+  --z-index: 7;
+  background-color: transparent;
+  color: #020701;
+  font-family: 'Inter', Helvetica;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  height: auto;
+  left: 153px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  mix-blend-mode: normal;
+  opacity: 0.33;
+  position: absolute;
+  text-align: left;
+  top: 317px;
+  width: auto;
+}
+
+.register .text_label-mzXdH9 {
+  --z-index: 8;
+  background-color: transparent;
+  color: #020701;
+  font-family: 'Inter', Helvetica;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  height: auto;
+  left: 153px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  mix-blend-mode: normal;
+  opacity: 0.33;
+  position: absolute;
+  text-align: left;
+  top: 380px;
+  width: auto;
+}
+
+.register .text_label-QxM5SU {
+  --z-index: 9;
+  background-color: transparent;
+  color: #020701;
+  font-family: 'Inter', Helvetica;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  height: auto;
+  left: 153px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  mix-blend-mode: normal;
+  opacity: 0.33;
+  position: absolute;
+  text-align: left;
+  top: 443px;
+  width: auto;
+}
